@@ -177,6 +177,7 @@ body {
     color: var(--primary-text-color);
     background: #F5F4FA;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .filter-btn:active{
