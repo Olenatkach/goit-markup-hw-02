@@ -1,0 +1,192 @@
+:root {
+--primary-font-family: "Roboto", sans-serif;
+--secondary-font-family: "Raleway", sans-serif;
+--primary-text-color: #212121;
+--secondary-text-color: #757575;
+--main-text-title-color: #FFFFFF;
+--color-hover: #2196F3;
+}
+body {
+    font-family: var(--primary-font-family);
+    color: var(--primary-text-color);
+}
+
+/* Logo-link start */
+.logo-link {
+    text-decoration: none;
+    font-family: var(--secondary-font-family);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+    color: #2196F3;
+}
+.logo-link-black {
+    text-decoration: none;
+    font-family: var(--secondary-font-family);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+/* Logo-link end */
+
+/* Navigation start */
+.nav-list, 
+.contact-list,
+.nav-list-item-link {
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav-list-item-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+} 
+.nav-list-item-link:hover,
+.nav-list-item-link:focus {
+    color: var(--color-hover);
+}
+
+.contact-list-link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);   
+}
+.contact-list-link:hover,
+.nav-list-item-link:focus {
+    color: var(--color-hover);
+}
+/* Navigation end */
+
+/* HERO */
+.main-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    /* or 136% */
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    /* color: #FFFFFF; */
+}
+.modal-btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    /* identical to box height, or 188% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    background: #188CE8;
+    cursor: pointer;}
+
+.modal-btn:active {
+    background: var(--color-hover);
+}
+.features-list {
+    text-decoration: none;
+    list-style: none;
+}
+.title-description {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+}
+.description{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    /* or 171% */
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+.servise-list,
+.servise-item,
+.team,
+.footer-adress-link,
+.footer-adress-list,
+.footer-contact-link {
+    list-style: none;
+    text-decoration: none;
+    font-style: normal;
+}
+.footer-adress-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    /* or 171% */    
+    letter-spacing: 0.03em;
+    /* color: #FFFFFF; */
+}
+
+.footer-contact-link{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    /* or 171% */
+    letter-spacing: 0.03em;
+    /* color: rgba(255, 255, 255, 0.6); */
+}
+
+/* Portfolio start */
+.nav-list-item-link:hover,
+.nav-list-item-link:focus {
+    color: var(--color-hover);
+}
+
+
+/* Portfolio filter */
+.filter-btn-list,
+.portfolio-list {
+    list-style: none;
+    text-decoration: none;
+}
+
+.filter-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    /* identical to box height, or 162% */
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+
+.filter-btn:active{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    /* identical to box height, or 162% */
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    background: var(--color-hover);
+}
+
