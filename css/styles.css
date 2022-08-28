@@ -5,10 +5,17 @@
 --secondary-text-color: #757575;
 --main-text-title-color: #FFFFFF;
 --color-hover: #2196F3;
+--black-background: #2F303A;
+--header-logo-black: #000000;
+
 }
 body {
     font-family: var(--primary-font-family);
     color: var(--primary-text-color);
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
 }
 
 /* Logo-link start */
@@ -19,8 +26,7 @@ body {
     font-size: 26px;
     line-height: 1.19;
     /* identical to box height */
-    letter-spacing: 0.03em;
-    color: #2196F3;
+    color: var(--color-hover);
 }
 .logo-link-black {
     text-decoration: none;
@@ -29,8 +35,7 @@ body {
     font-size: 26px;
     line-height: 1.19;
     /* identical to box height */
-    letter-spacing: 0.03em;
-    color: #000000;
+    color: var(--header-logo-black)
 }
 /* Logo-link end */
 
@@ -44,11 +49,11 @@ body {
 
 .nav-list-item-link {
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
-} 
+}
+
 .nav-list-item-link:hover,
 .nav-list-item-link:focus {
     color: var(--color-hover);
@@ -57,13 +62,12 @@ body {
 .contact-list-link {
     text-decoration: none;
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);   
 }
 .contact-list-link:hover,
-.nav-list-item-link:focus {
+.contact-list-link:focus {
     color: var(--color-hover);
 }
 /* Navigation end */
@@ -74,10 +78,11 @@ body {
     font-size: 44px;
     line-height: 1.36;
     /* or 136% */
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    /* color: #FFFFFF; */
+    color: var(--main-text-title-color);
+    background: var(--black-background);
+        
 }
 .modal-btn {
     font-weight: 700;
@@ -86,9 +91,8 @@ body {
     /* identical to box height, or 188% */
     display: flex;
     align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: var(--main-text-title-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     background: #188CE8;
@@ -103,26 +107,19 @@ body {
 }
 .title-description {
     font-weight: 700;
-    font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-text-color);
 }
 .description{
-    font-weight: 400;
-    font-size: 14px;
     line-height: 1.71;
     /* or 171% */
-    letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 }
 .section-title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    letter-spacing: 0.03em;
+    line-height: 1.17;
     color: var(--primary-text-color);
 }
 .servise-list,
@@ -135,22 +132,49 @@ body {
     text-decoration: none;
     font-style: normal;
 }
-.footer-adress-link {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    /* or 171% */    
-    letter-spacing: 0.03em;
-    /* color: #FFFFFF; */
+.team-title-description {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    /* identical to box height */
+    color: var(--primary-text-color);
+}
+.team-description {
+    font-size: 16px;
+    line-height: 1.19;
+    /* identical to box height */
+    color: var(--secondary-text-color);
+}
+.footer {
+    background: var(--black-background);
+}
+.logo-link {
+    text-decoration: none;
+    font-family: var(--secondary-font-family);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    /* identical to box height */
+    color: var(--color-hover);
+}
+.logo-link-white {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    /* identical to box height */
+    color: var(--main-text-title-color);
 }
 
-.footer-contact-link{
-    font-weight: 400;
-    font-size: 14px;
+.footer-adress-link {
+    line-height: 1.71;
+    /* or 171% */    
+    color: var(--main-text-title-color);
+}
+
+.footer-contact-link {
     line-height: 1.71;
     /* or 171% */
-    letter-spacing: 0.03em;
-    /* color: rgba(255, 255, 255, 0.6); */
+    color: rgba(255, 255, 255, 0.6);
 }
 
 /* Portfolio start */
@@ -166,28 +190,39 @@ body {
     list-style: none;
     text-decoration: none;
 }
-
+.title-portfolio-description {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    /* identical to box height, or 200% */
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color);
+}
+.portfolio-description {
+    font-size: 16px;
+    line-height: 1.88;
+    /* identical to box height, or 188% */
+    color: var(--secondary-text-color);
+}
 .filter-btn {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
     /* identical to box height, or 162% */
-    text-align: center;
-    letter-spacing: 0.03em;
     color: var(--primary-text-color);
     background: #F5F4FA;
     border-radius: 4px;
     cursor: pointer;
 }
 
-.filter-btn:active{
+.filter-btn:active,
+.filter-btn:hover,
+.filter-btn:focus {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
     /* identical to box height, or 162% */
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--main-text-title-color);
     background: var(--color-hover);
 }
 
